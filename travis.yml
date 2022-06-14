@@ -23,3 +23,7 @@ jobs:
         - "gem install bundler -v 2.1.4"
       before_script:
         - "RAILS_ENV=test bundle exec rake db:create"
+      services:
+        - redis
+        
+    ## rename file to .travis.yml 
